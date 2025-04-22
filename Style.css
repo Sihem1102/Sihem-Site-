@@ -1,0 +1,171 @@
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: #f8f8f8;
+    color: rgb(52, 52, 52);
+    
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    padding: 30px;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: #3d3d3d; 
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.hero{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.background-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero h1{
+    font-size: 5rem;
+    color: rgb(104, 104, 104);
+}
+
+.hero p{
+    font-size: 1.5rem;
+   margin-top: -20px;
+}
+
+.btn {
+    margin-top: 350px;
+    background-color: #dadada;
+    color: #111;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+
+.logo {
+    width: 70px; 
+    height: auto; 
+    display: block;
+    margin-top: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 20px 40px; 
+    background-color: transparent;
+    box-sizing: border-box;
+    
+    
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    white-space:nowrap;
+
+
+}
+
+.nom {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #222;
+}
+
+section{
+    height: 100vh;
+    padding: 80px 20px;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.pictures {
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+   
+}
+
+.image-block{
+    text-align: center;
+}
+
+.image-block img {
+    width: 450px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+.Picture {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
