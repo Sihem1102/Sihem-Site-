@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    color: #7bff72;
+}
+
+.projets {
+    padding: 50px 5%;
+    position: relative;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+.layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    position: relative;
+}
+
+.image-gauche img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+.bloc-droite {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.image-haut img, .image-bas img {
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+.image-haut img {
+    width: 500px;
+    height: 180px;
+}
+
+.image-bas img {
+    width: 500px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+.plante {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    opacity: 0.8;
+    pointer-events: none;
+    
+}
+
+/* Mots-clés en fond */
+.mots-cles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.mots-cles span {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.2);
+    user-select: none;
+    white-space: nowrap;
+}
+
+.petites-images-gauche {
+    position: fixed; /* 👈 très important, pas absolute ! */
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.petites-images-gauche img {
+    width: 170px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    
+}
