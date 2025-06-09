@@ -8,8 +8,16 @@
 </head>
 </head>
 <body>
+  <div class="language-switcher">
+  <span class="lang-option" data-lang="fr">FR</span> /
+  <span class="lang-option" data-lang="en">EN</span>
+  <link rel="stylesheet" href="Logements.css" />
+
+</div>
+
     <div class="container">
-        <h2 class="title">LOGEMENTS</h2>
+        <h2 class="title" data-i18n="logements_title">LOGEMENTS</h2>
+
 
         <div class="top-images">
             <img src="Images logements/Perspective 1' 2.png" alt="Image 1" class="image-card">
@@ -20,13 +28,13 @@
           <div class="middle-section">
             <img src="Images logements/Coupe 1 2.png" alt="Grande Image" class="large-image">
             <div class="text-block">
-                <p>From the middle of the 19th century, the transformation of the city of Paris by the great renovation under Haussmann
+                 <p data-i18n="logements_text1">From the middle of the 19th century, the transformation of the city of Paris by the great renovation under Haussmann
                 led to the creation of hollow teeth. These small unexploited plots surrounded by gable walls mark a break in
                 the continuity of the bati. To stop the densification of the city of Paris, new constructions will appear to meet the
                 constant need for housing. 
                 </p>
                 
-                <p> The project we have dealt with this semester is located at 6-8 rue Bardinet in the 14th arrondissement
+                <p data-i18n="logements_text2">The project we have dealt with this semester is located at 6-8 rue Bardinet in the 14th arrondissement
                 of Paris. The building is in a small plot very constrained by the opposite but
                 Through the configuration of this portion of territory,
                 the objective was to design living spaces offering direct
@@ -57,5 +65,8 @@
             <img src="Images logements/Plan x2 2.png" alt="Bas 2" class="image-card">
           </div>
     </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>

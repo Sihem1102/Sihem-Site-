@@ -106,6 +106,7 @@ header {
     align-items: center;
     gap: 30px;
     white-space:nowrap;
+    z-index: 10;
 
 
 }
@@ -251,7 +252,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #c9c9c9;
+  background: linear-gradient(-45deg, #cecece, #ffffff, #e0e0e0, #cccccc);
+  background-size: 400% 400%;
+  animation: holographicMove 20s ease infinite;
 }
 
 .small-header {
@@ -293,11 +296,12 @@ body {
 .card-image {
   margin: 50px ;
   width: 200px; 
-  height: 200px; 
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 4px 7px 8px rgba(0,0,0,0.1);
   background-color: #d8d8d8;
+  
 }
 
 
@@ -317,4 +321,78 @@ body {
 
 .card:hover .card-title {
   opacity: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto;     
+  padding: 20px;      
+  box-sizing: border-box;
+}
+
+img, video, iframe, input, select, textarea, button {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.lang-option {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.lang-option:hover {
+  text-decoration: underline;
+}
+
+.background-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 15px);
+  grid-auto-rows: 15px;
+  gap: 4px;
+  z-index: 0; /* Important : PAS -1 */
+}
+
+.background-grid div {
+  border: 1px solid rgba(180, 180, 180, 0.3);
+  background-color: transparent; 
+  transition: border-color 0.2s, box-shadow 0.2s;}
+
+.background-grid div:hover {
+  background: linear-gradient(135deg, #ffffff, #d0f0ff, #f0ccff);
+  background-size: 300% 300%;
+  animation: glowMove 3s ease infinite;
+  box-shadow:
+  0 0 6px rgba(255, 255, 255, 0.6),
+  0 0 12px rgba(0, 255, 255, 0.4),
+  0 0 18px rgba(255, 0, 255, 0.3);
+  border-color: white;
+  background-color: transparent;
+}
+
+@keyframes glowMove {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }

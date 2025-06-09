@@ -97,3 +97,22 @@ body {
   height: 550px;
   object-fit: cover;
 }
+
+.language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.lang-option {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.lang-option:hover {
+  text-decoration: underline;
+}

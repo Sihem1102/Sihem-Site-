@@ -108,3 +108,22 @@ h1 {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
     
 }
+
+.language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.lang-option {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.lang-option:hover {
+  text-decoration: underline;
+}

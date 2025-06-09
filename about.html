@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+    <script src="about.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+</head>
+<body>
+  <div class="language-switcher">
+  <span class="lang-option" data-lang="fr">FR</span> /
+  <span class="lang-option" data-lang="en">EN</span>
+</div>
+
+    <section class="about-section">
+  <div class="newsletter-box">
+    <h2 data-i18n="about_contact_title">Contact</h2>
+    <p data-i18n="about_contact_text"></p>
+
+    <div class="social-icons">
+      <a href="https://www.instagram.com/sihem.12" target="_blank" rel="noopener">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/ton_nom_utilisateur" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="form-box">
+    <h2 data-i18n="about_email_title">Envoyer un email</h2>
+    <form id="signup-form">
+      <input type="email" id="email" placeholder="E-mail" required data-i18n-placeholder="placeholder_email" />
+      <input type="text" id="firstname" placeholder="First name" required data-i18n-placeholder="placeholder_firstname" />
+      <input type="text" id="lastname" placeholder="Last name" required data-i18n-placeholder="placeholder_lastname" />
+      <textarea id="message" placeholder="Votre message..." rows="4" data-i18n-placeholder="placeholder_message"></textarea>
+
+      <button type="submit" data-i18n="about_submit">Subscribe</button>
+      <div class="success-message" id="success-message" data-i18n="about_success">Mail envoyé avec succès !</div>
+    </form>
+  </div>
+</section>
+
+
+
+</body>
+</html>

@@ -5,7 +5,7 @@ body {
     font-family: Helvetica, sans-serif;
     background-color: #d9d9d9;
     color: rgb(52, 52, 52);
-    
+    overflow-x: hidden;
 }
 
 .hero{
@@ -80,6 +80,7 @@ body{
 
 .image-container{
     text-align: center;
+   
 }
 
 .image-container img {
@@ -88,6 +89,7 @@ body{
     object-fit: cover;
     display: block;
     margin: 0 auto;
+  
 }
 
 .caption {
@@ -133,7 +135,9 @@ body{
   
   .image-container {
     position: relative;
-    width: 400px;
+    width: 100%;
+    max-width: 100%;
+    
   }
   
   .image-container img {
@@ -185,7 +189,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #cccccc;
 }
 
 .small-header {
@@ -207,4 +211,33 @@ body {
     min-height: 100vh; 
 }
 
+.image-container {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.image-container.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.lang-option {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.lang-option:hover {
+  text-decoration: underline;
+}
 

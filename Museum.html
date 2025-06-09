@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Museum.css">
+    
 </head>
 <body>
+  <div class="language-switcher">
+  <span class="lang-option" data-lang="fr">FR</span> /
+  <span class="lang-option" data-lang="en">EN</span>
+</div>
+
     <div class="container">
-        <h1 class="title">Bury's Museum</h1>
+        <h1 class="title" data-i18n="museum_title">Bury's Museum</h1>
     
         <div class="top-images">
           <img src="Images Museum/Tableau 1 2.png" alt="Image 1" class="img-hover">
@@ -23,7 +29,9 @@
             <img src="Images Museum/Ambiance 2.png" alt="Image Carrée">
           </div>
           <div class="text-content">
-            <p>Voici du texte descriptif qui accompagne votre projet. Vous pouvez écrire plusieurs lignes ici pour expliquer votre travail ou donner des informations supplémentaires.</p>
+            <p data-i18n="museum_description">
+  Voici du texte descriptif qui accompagne votre projet. Vous pouvez écrire plusieurs lignes ici pour expliquer votre travail ou donner des informations.
+</p>
           </div>
         </div>
     
@@ -43,6 +51,8 @@
         </div>
     
       </div>
+
+      <script src="script.js"></script>
     
 </body>
 </html>

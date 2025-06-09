@@ -1,0 +1,101 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f3f3f3;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+.newsletter-box,
+.form-box {
+  width: 50%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.newsletter-box {
+  background-color: #093c38;
+  color: white;
+}
+
+.newsletter-box h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.newsletter-box p {
+  color: #bbb;
+}
+
+.social-icons a {
+  margin-right: 20px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.form-box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-box h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form select,
+form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+form button {
+  padding: 10px;
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+  display: none;
+}
+
+
+.language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.lang-option {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.lang-option:hover {
+  text-decoration: underline;
+}

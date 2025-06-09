@@ -6,12 +6,23 @@
     <title>Portfolio Sihem Sassi</title>
     <link rel="stylesheet" href="Style.css">
 </head>
+
+
 <body>
+
+    <div class="background-grid"></div>
+
+
+  <div class="language-switcher">
+  <span class="lang-option" data-lang="fr">FR</span> /
+  <span class="lang-option" data-lang="en">EN</span>
+</div>
+
 
     <header> 
         <div class="logo-section">
             <img src="Images /Logo.png" alt="Logo" class="logo">
-            <h2 class="title">SIHEM SASSI</h2>
+            <h2 class="title" data-i18n="home_name">SIHEM SASSI</h2>
         </div>
 
     </header>
@@ -20,20 +31,21 @@
     <div class="cards">
         <a href="project.html" class="card">
         <img src="Images Onglets/Logo Projets.png" alt="Project" class="card-image">
-        <div class="card-title">PROJECTS</div> 
+        <div class="card-title" data-i18n="home_projects">PROJETS</div>
         </a>
         <a href="drawing.html" class="card">
         <img src="Images Onglets/logo Drawing.png" alt="Drawing" class="card-image">
-        <div class="card-title">DRAWINGS</div>
+        <div class="card-title" data-i18n="home_drawings">DESSINS</div>
         </a>
         <a href="about.html" class="card">
         <img src="Images Onglets/Logo About.png" alt="About" class="card-image">
-        <div class="card-title">ABOUT</div>
+        <div class="card-title" data-i18n="home_about">A PROPOS</div>
         </a>
     </div>
-
-    <script> src="script.js"</script>
-
+    
+    
+    <script src="script.js"></script>
+  
 
 
 
